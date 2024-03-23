@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Examination_System.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Welcome to online exam</title>
+    <asp:ContentPlaceHolder ID="heardcontentplaceholder" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/usercustom.css" rel="stylesheet">
+
+    <%--jquery library--%>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+
+<body class="mainbackground">
+    <form id="form1" runat="server">
+        <!-- Navigation -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top navcolor">
+            <div class="container">
+                <a class="navbar-brand" href="Homepage.aspx">
+                    <img id="answerlogo" src="assets/images/answers.png" />
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="category" href="index.aspx">Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="myresult" href="myresult.aspx">result</a>
+                        </li>
+                        <li class="nav-item">
+                            <asp:Button ID="adminbtn" class="btn btn-success adminbtn button-equal" runat="server" Text="Admin Login" OnClick="Admin_Click" />
+                        </li>
+                        <li class="nav-item">
+                            <asp:Button ID="studentbtn" Class="btn btn-primary studentbtn button-equal" runat="server" Text="Student Login" OnClick="Student_Click" />
+                        </li>
+                        <li class="nav-item">
+                            <asp:LinkButton ID="link_loginout" runat="server" Text="Login" CssClass="btn btn-danger navbutton" OnClick="link_loginout_Click"></asp:LinkButton>
+                            <%--<asp:HyperLink ID="link_loginout" runat="server" CssClass="nav-link" NavigateUrl="~/login.aspx">Login</asp:HyperLink>--%>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Content -->
+        <div class="container">
+            <asp:ContentPlaceHolder ID="maincontentplaceholder" runat="server">
+            </asp:ContentPlaceHolder>
+            <br />
+        </div>
+        <!-- /.container -->
+        <!-- Bootstrap core JavaScript -->
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    </form>
+</body>
+</html>
