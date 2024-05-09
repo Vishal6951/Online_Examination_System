@@ -4,14 +4,14 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="maincontentplaceholder" runat="server">
     <h2 class="m-4" style="color:white;">
             All <asp:Label ID="lbl_categorysubject" runat="server"></asp:Label> Category Subject</h2>
-        <hr />
-    <div class="row">
+        <hr style="background-color: #00986f;" />
+    <div class="row categorylist">
                 <asp:Repeater ID="gridview_categoryitem" runat="server">
             <ItemTemplate>
                 <div class="col-lg-3 mb-3">
-                    <div class="card h-100 text-center">
-                        <h4 class="card-header"><%# Eval("subject_name") %></h4>
-                        <div class="card-footer">
+                    <div class="card h-100 text-center borderstyling"> 
+                        <h4 class="card-header category-header"><%# Eval("subject_name") %></h4>
+                        <div class="card-footer footer">
                             <asp:HyperLink ID="btn_category" runat="server" CssClass="btn btn-primary" ForeColor="White" NavigateUrl='<%# "~/subjectexam.aspx?sid=" +  Eval("subject_id") %>'>Go to exams</asp:HyperLink>
                         </div>
                     </div>

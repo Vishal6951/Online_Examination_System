@@ -14,7 +14,6 @@ namespace Examination_System
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
         string s = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString;
         protected void btn_login_Click(object sender, EventArgs e)
@@ -73,7 +72,6 @@ namespace Examination_System
         {
             Response.Redirect("~/Admin/resetpass.aspx");
         }
-
  
     }
 

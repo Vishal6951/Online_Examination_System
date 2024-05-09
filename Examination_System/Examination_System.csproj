@@ -67,7 +67,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Admin\addadmin.aspx" />
     <Content Include="Admin\addquestion.aspx" />
     <Content Include="Admin\adminregister.aspx" />
     <Content Include="Admin\category.aspx" />
@@ -126,13 +125,6 @@
     </Compile>
     <Compile Include="adminMaster.Master.designer.cs">
       <DependentUpon>adminMaster.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\addadmin.aspx.cs">
-      <DependentUpon>addadmin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\addadmin.aspx.designer.cs">
-      <DependentUpon>addadmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\addquestion.aspx.cs">
       <DependentUpon>addquestion.aspx</DependentUpon>

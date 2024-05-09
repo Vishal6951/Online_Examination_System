@@ -6,18 +6,18 @@
     <h2 class="m-4" style="color:white;">All
         <asp:Label ID="lbl_subjectexam" runat="server"></asp:Label>
         Subject Exams</h2>
-    <hr />
-    <div class="row">
+    <hr style="background-color: #00986f;" />
+    <div class="row categorylist">
         <asp:Repeater ID="gridview_sujectexam" runat="server">
             <ItemTemplate>
                 <div class="col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <h3 class="card-header">Exam name: <%# Eval("exam_name") %></h3>
+                    <div class="card h-100 borderstyling">
+                        <h3 class="card-header category-header">Exam name: <%# Eval("exam_name") %></h3>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Exam discription: <%# Eval("exam_description") %></li>
-                            <li class="list-group-item">Pass Marks: <%# Eval("exampass_marks") %></li>
-                            <li class="list-group-item">Total Marks: <%# Eval("exam_marks") %></li>
-                            <li class="list-group-item">
+                            <li class="list-group-item footer">Exam discription: <%# Eval("exam_description") %></li>
+                            <li class="list-group-item footer">Pass Marks: <%# Eval("exampass_marks") %></li>
+                            <li class="list-group-item footer">Total Marks: <%# Eval("exam_marks") %></li>
+                            <li class="list-group-item footer">
                                 <asp:HyperLink ID="hlink_gotexam" runat="server" CssClass="btn btn-primary" ForeColor="White" NavigateUrl='<%# "~/question.aspx?eid=" + Eval("exam_id")%>'>Take exam</asp:HyperLink>
                             </li>
                         </ul>

@@ -65,7 +65,7 @@ namespace Examination_System.Admin
                 catch (Exception ex)
                 {
                     panel_resultshow_warning.Visible = true;
-                    lbl_resultshowwarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                    lbl_resultshowwarning.Text = "Something went wrong." + ex.Message;
                 }
             }
         }
@@ -104,7 +104,7 @@ namespace Examination_System.Admin
                 catch (Exception ex)
                 {
                     panel_resultshow_warning.Visible = true;
-                    lbl_resultshowwarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                    lbl_resultshowwarning.Text = "Something went wrong." + ex.Message;
                 }
             }
         }

@@ -15,6 +15,15 @@ namespace Examination_System
     {
 
         /// <summary>
+        /// getemail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox getemail;
+
+        /// <summary>
         /// gridview_categorylist control.
         /// </summary>
         /// <remarks>

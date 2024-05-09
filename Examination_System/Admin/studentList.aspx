@@ -5,7 +5,7 @@
      <div class="col-md-12">
         <div class="card">
             <%--Button For select panel--%>
-            <div class="btn-group bg-danger">
+            <div class="btn-group">
                 <asp:Button ID="btn_panelresult" runat="server" Text="All students" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" BackColor="#343A40" />
             </div>
             <div class="card text-center mb-3">

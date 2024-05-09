@@ -5,9 +5,9 @@
     <div class="col-md-12">
         <div class="card">
             <%--Button For select panel--%>
-            <div class="btn-group bg-danger">
-                <asp:Button ID="btn_panelexamlist" runat="server" Text="Exam List" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" OnClick="btn_panelexamlist_Click" />
-                <asp:Button ID="btn_paneladdexam" runat="server" Text="Add Exam" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" OnClick="btn_paneladdexam_Click" />
+            <div class="btn-group">
+                <asp:Button ID="btn_panelexamlist" runat="server" Text="Exam List" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" OnClick="btn_panelexamlist_Click" style="border-radius:5px;background-color:#343A40;" />
+                <asp:Button ID="btn_paneladdexam" runat="server" Text="Add Exam" CssClass="btn btn-info ml-4" BorderStyle="None" CausesValidation="False" OnClick="btn_paneladdexam_Click" style="background-color:#00986f;border-radius:5px;" />
             </div>
             <%--Add exam panel--%>
             <asp:Panel ID="panel_addexam" runat="server">
@@ -87,11 +87,10 @@
             </asp:Panel>
             <%--exam list panel--%>
             <asp:Panel ID="panel_examlist" runat="server">
-                <div class="card text-center mb-3">
-                    <div class="card-body">
+                <div>
+                    <div>
                         <div class="table-responsive">
-                            <asp:GridView ID="grdview_examlist" runat="server" GridLines="None" CssClass="table table-bordered" AutoGenerateColumns="False" OnRowCommand="grdview_examlist_RowCommand" AllowPaging="True" OnPageIndexChanging="grdview_examlist_PageIndexChanging" PageSize="5">
-
+                            <asp:GridView ID="grdview_examlist" runat="server" GridLines="None" CssClass="table table-striped" AutoGenerateColumns="False" OnRowCommand="grdview_examlist_RowCommand" AllowPaging="True" OnPageIndexChanging="grdview_examlist_PageIndexChanging" PageSize="5">
                                 <Columns>
                                     <asp:BoundField DataField="category_name" HeaderText="Category Name" />
                                     <asp:BoundField DataField="subject_name" HeaderText="Subject Name" />
@@ -112,7 +111,7 @@
                                             <i class="fa fa-plus" aria-hidden="true"></i> Add Question
                                             </asp:HyperLink>
                                             
-                                            <asp:HyperLink ID="btn_viewquestion" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/admin/examquestion.aspx?eid=" + Eval("exam_id") %>'>
+                                           <asp:HyperLink ID="btn_viewquestion" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/admin/examquestion.aspx?eid=" + Eval("exam_id") %>'>
                                             <i class="fa fa-info-circle" aria-hidden="true"></i> View Question
                                             </asp:HyperLink>
                                         </ItemTemplate>

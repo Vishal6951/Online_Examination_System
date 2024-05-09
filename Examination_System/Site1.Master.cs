@@ -16,7 +16,7 @@ namespace Examination_System
                 HttpCookie usercookie = Request.Cookies["user_cookies"];
                 if (Session["Useremail"] != null || usercookie != null)
                 {
-                    link_loginout.Text = "Logout";
+                    link_loginout.Text = "Log out";
                     link_loginout.Visible = true;
 
                     adminbtn.Visible = false;
@@ -32,16 +32,19 @@ namespace Examination_System
         //for clicking the login out button
         protected void link_loginout_Click(object sender, EventArgs e)
         {
-            if (link_loginout.Text == "Logout")
+            if (link_loginout.Text == "Log out")
             {
                 Response.Cookies["user_cookies"].Expires = DateTime.Now.AddYears(-1);
                 Response.Cookies.Clear();
                 Session.Clear();
-                Response.Redirect("Homepage.aspx");          
+                Response.Redirect("Homepage.aspx");
+                adminbtn.Visible = true;
+                studentbtn.Visible = true;
             }
             else if (link_loginout.Text == "Log in")
             {
-                Response.Redirect("~/Login.aspx");
+                Response.Redirect("~/Homepage.aspx");
+
             }
         }
         protected void Admin_Click(object sender, EventArgs e)

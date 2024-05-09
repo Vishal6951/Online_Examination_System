@@ -5,9 +5,9 @@
     <div class="col-md-12">
         <div class="card">
             <%--Button For select panel--%>
-            <div class="btn-group bg-danger">
-                <asp:Button ID="btn_panelsubjectlist" runat="server" Text="Subject List" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" OnClick="btn_panelsubjectlist_Click" />
-                <asp:Button ID="btn_paneladdSubject" runat="server" Text="Add Subject" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" OnClick="btn_paneladdSubject_Click" />
+            <div class="btn-group">
+                <asp:Button ID="btn_panelsubjectlist" runat="server" Text="Subject List" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" OnClick="btn_panelsubjectlist_Click" style="border-radius:5px;background-color:#343A40;" />
+                <asp:Button ID="btn_paneladdSubject" runat="server" Text="Add Subject" CssClass="btn btn-info ml-4" BorderStyle="None" CausesValidation="False" OnClick="btn_paneladdSubject_Click" style="background-color:#00986f;border-radius:5px;" />
             </div>
             <%--Add subject panel--%>
             <asp:Panel ID="panel_addsubject" runat="server">

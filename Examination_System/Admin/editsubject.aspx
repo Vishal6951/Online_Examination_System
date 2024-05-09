@@ -5,7 +5,7 @@
     <div class=" col-md-12">
         <div class="card">
          <%--Button For edit subject slect--%>
-            <div class="btn-group bg-danger">
+            <div class="btn-group">
                 <asp:Button ID="btn_panelsubjectlist" runat="server" Text="Edit Subject" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" BackColor="#343A40" />
             </div>
             <div class="card-body">

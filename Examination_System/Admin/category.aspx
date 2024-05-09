@@ -5,14 +5,14 @@
     <div class="col-md-12">
         <div class="card">
             <%--Button For select panel--%>
-            <div class="btn-group bg-danger">
-                <asp:Button ID="btn_panelcategorylist" runat="server" Text="Category List" CssClass="btn btn-info" OnClick="btn_panelcategorylist_Click" BorderStyle="None" CausesValidation="False" />
-                <asp:Button ID="btn_paneladdcategory" runat="server" Text="Add Category" CssClass="btn btn-info" OnClick="btn_paneladdcategory_Click" BorderStyle="None" CausesValidation="False" />
+            <div class="btn-group">
+                <asp:Button ID="btn_panelcategorylist" runat="server" Text="Category List" CssClass="btn btn-info" OnClick="btn_panelcategorylist_Click" BorderStyle="None" CausesValidation="False" style="border-radius:5px;background-color:#343A40;" />
+                <asp:Button ID="btn_paneladdcategory" runat="server" Text="Add Category" CssClass="btn btn-info ml-4" OnClick="btn_paneladdcategory_Click" BorderStyle="None" CausesValidation="False" style="background-color:#00986f;border-radius:5px;" />
             </div>
             <%--Add category panel--%>
             <asp:Panel ID="panel_addcategory" runat="server">
                 <div class="card-body">
-                    <div class="row form-group">
+                    <div class="row form-group">    
                         <label class="col-md-2 col-form-label ">Category Name</label>
                         <div class="col-md-4">
                             <asp:TextBox ID="txt_category" runat="server" CssClass="form-control"></asp:TextBox>

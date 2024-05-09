@@ -23,9 +23,8 @@
             </blockquote>
         </div>
     </div>
-    <br />
-
-    <div class="card carddetail cardstudent">
+    
+    <div class="card student carddetail cardstudent">
         <div class="card-header">
           <center> <b> In Student Section</b></center>
         </div>

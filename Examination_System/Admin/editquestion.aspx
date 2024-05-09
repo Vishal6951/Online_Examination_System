@@ -5,7 +5,7 @@
     <div class="col-md-12">
         <div class="card">
             <%--Button For select add question for exam--%>
-            <div class="btn-group bg-danger">
+            <div class="btn-group">
                 <asp:Button ID="btn_paneleditquestion" runat="server" Text="Edit Question" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" BackColor="#343A40" />
             </div>
             <div class="card-body">
@@ -55,7 +55,7 @@
                 <div class="row form-group">
                 <label class="col-md-2 col-form-label text-center">Correct Answer</label>
                     <div class="col-md-4">
-                        <asp:RadioButtonList ID="rdo_editcorrectanswer" runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" CellPadding="10">
+                        <asp:RadioButtonList ID="rdo_editcorrectanswer" runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" CellPadding="10" Width="250px">
                             <asp:ListItem Text="A" Value=1></asp:ListItem>
                             <asp:ListItem Text="B" Value=2></asp:ListItem>
                             <asp:ListItem Text="C" Value=3></asp:ListItem>

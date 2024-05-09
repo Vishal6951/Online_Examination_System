@@ -66,13 +66,13 @@ namespace Examination_System.Admin
                     int i = (int)cmd.ExecuteNonQuery();
                     if (i > 0)
                     {
-                        Response.Redirect("~/admin/question.aspx");
+                        Response.Redirect("~/Admin/question.aspx");
                         Response.Write("Delete Succesfully");
                     }
                     else
                     {
                         panel_examquestion_warning.Visible = true;
-                        lbl_examquestionwarning.Text = "Something went wrong.";
+                        lbl_examquestionwarning.Text = "Something went wrong. Question is not deleting";
                     }
                 }
                 catch (Exception ex)
@@ -89,7 +89,8 @@ namespace Examination_System.Admin
         {
             if (e.CommandName == "deletequestion")
             {
-                deletequestion(Convert.ToInt32(e.CommandArgument));
+                int questionId = Convert.ToInt32(e.CommandArgument);
+                deletequestion(questionId);
             }
         }
     }

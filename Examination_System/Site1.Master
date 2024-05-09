@@ -49,7 +49,7 @@
                             <asp:Button ID="studentbtn" Class="btn btn-primary studentbtn button-equal" runat="server" Text="Student Login" OnClick="Student_Click" />
                         </li>
                         <li class="nav-item">
-                            <asp:LinkButton ID="link_loginout" runat="server" Text="Login" CssClass="btn btn-danger navbutton" OnClick="link_loginout_Click"></asp:LinkButton>
+                            <asp:LinkButton ID="link_loginout" runat="server" Text="Log In" CssClass="btn btn-danger navbutton" OnClick="link_loginout_Click"></asp:LinkButton>
                             <%--<asp:HyperLink ID="link_loginout" runat="server" CssClass="nav-link" NavigateUrl="~/login.aspx">Login</asp:HyperLink>--%>
                         </li>
                     </ul>
@@ -57,7 +57,7 @@
             </div>
         </nav>
         <!-- Page Content -->
-        <div class="container">
+        <div>
             <asp:ContentPlaceHolder ID="maincontentplaceholder" runat="server">
             </asp:ContentPlaceHolder>
             <br />

@@ -5,7 +5,7 @@
     <div class="col-md-12">
         <div class="card">
             <%--Button For select panel--%>
-            <div class="btn-group bg-danger">
+            <div class="btn-group">
                 <asp:Button ID="btn_panelcategorylist" runat="server" Text="Edit Category" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" BackColor="#343A40" />
             </div>
             <%--Add category --%>

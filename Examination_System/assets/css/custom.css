@@ -6,6 +6,48 @@
     font-family: 'Poppins',sans-serif;
     box-sizing: border-box;
 }
+/*.emailbox {
+    border: solid 3px;
+    color: white;
+    border-radius: 10px;
+    border-color: #00986f;
+    background-color: #1d2026;
+}*/
+.dashboard-content {
+    max-width: 1140px;
+    margin-left:5%;
+}
+
+.adminregisterstyling {
+    border: solid 3px;
+    color: white;
+    border-radius: 10px;
+    border-color: #00986f;
+    background-color: #1d2026;
+}
+
+.adminloginstyling {
+    border: solid 3px;
+    color: white;
+    border-radius: 10px;
+    border-color: #00986f;
+    background-color: #1d2026;
+}
+
+.registerstyling {
+    border: solid 3px;
+    color: white;
+    border-radius: 10px;
+    border-color: #00986f;
+    background-color: #1d2026;
+}
+.loginstyling {
+    border: solid 3px;
+    color: white;
+    border-radius: 10px;
+    border-color: #00986f;
+    background-color: #1d2026;
+}
 .txtclr {
     color: #f2f2f2;
 }

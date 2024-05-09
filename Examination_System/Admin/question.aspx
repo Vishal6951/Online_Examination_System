@@ -6,7 +6,7 @@
     <div class="col-md-12">
         <div class="card">
             <%--Button For select edit--%>
-            <div class="btn-group bg-danger">
+            <div class="btn-group">
                 <asp:Button ID="btn_panelallquestion" runat="server" Text="All Question" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" BackColor="#343A40" />
             </div>
         </div>
@@ -28,21 +28,20 @@
                             </asp:TemplateField>
                             <asp:TemplateField HeaderText="Options">
                                 <ItemTemplate>
-                                    <asp:HyperLink ID="btn_detailsexam" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/admin/detailsexamquestion.aspx?eid=" + Eval("exam_id") %>'>
+                                    <asp:HyperLink ID="btn_detailsexam" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/detailsexamquestion.aspx?eid=" + Eval("exam_id") %>'>
                                             <i class="fa fa-info-circle" aria-hidden="true"></i> Details
                                     </asp:HyperLink>
-                                    <asp:HyperLink ID="btn_editexam" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/admin/editquestion.aspx?qid=" + Eval("question_id") %>'>
+                                    <asp:HyperLink ID="btn_editexam" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/editquestion.aspx?qid=" + Eval("question_id") %>'>
                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit
                                     </asp:HyperLink>
-                                    <asp:LinkButton ID="btn_deleteexam" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" CommandArgument='<%# Eval("exam_id") %>' CommandName="deletequestion">
+                                    <asp:LinkButton ID="btn_deleteexam" runat="server" CommandName="deletequestion" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" CommandArgument='<%# Eval("exam_id") %>'>
                                             <i class="fa fa-trash" aria-hidden="true"></i> Delete
                                     </asp:LinkButton>
                                 </ItemTemplate>
                             </asp:TemplateField>
                         </Columns>
                         <EmptyDataTemplate>
-                            There is no question. Add question
-                       
+                            There is no question. Add question   
                         </EmptyDataTemplate>
                         <PagerStyle CssClass="card-footer" HorizontalAlign="Right" />
                     </asp:GridView>

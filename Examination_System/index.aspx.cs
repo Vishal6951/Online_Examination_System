@@ -13,6 +13,23 @@ namespace Examination_System
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            HttpCookie usercookie = Request.Cookies["user_cookies"];
+            if (Session["Useremail"] != null || usercookie != null)
+            {
+                if (Session["Useremail"] == null)
+                {
+                    getemail.Text = usercookie["Useremail"];
+                }
+                else
+                {
+                    getemail.Text = Session["Useremail"].ToString();
+                }
+            }
+            else
+            {
+                Response.Redirect("~/login.aspx");
+            }
+
             categorylistmethod();
 
         }

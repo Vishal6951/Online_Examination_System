@@ -75,7 +75,7 @@ namespace Examination_System.Admin
                     {
                         txt_category.Focus();
                         panel_addcategory_warning.Visible = true;
-                        lbl_categoryaddwarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                        lbl_categoryaddwarning.Text = "Something went wrong." + ex.Message;
                     }
 
                 }
@@ -129,7 +129,7 @@ namespace Examination_System.Admin
                 catch (Exception ex)
                 {
                     panel_categorylist_warning.Visible = true;
-                    lbl_categorylistwarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                    lbl_categorylistwarning.Text = "Something went wrong." + ex.Message;
                 }
             }
         }
@@ -159,7 +159,7 @@ namespace Examination_System.Admin
                 catch (Exception ex)
                 {
                     panel_categorylist_warning.Visible = true;
-                    lbl_categorylistwarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                    lbl_categorylistwarning.Text = "Something went wrong." + ex.Message;
                 }
 
             }

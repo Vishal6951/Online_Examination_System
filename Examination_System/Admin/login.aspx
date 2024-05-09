@@ -24,9 +24,13 @@
                 </a>  
              </div>  
         </nav>
-    <div class="container"  style="margin-top:10%;margin-left:19%;">
-        <div class="card card-login mx-auto mt-5">
-            <div class="card-header">Admin Login</div>
+    <div class="container"  style="margin-top:8%;margin-left:19%;">
+        <div class="card adminloginstyling card-login mx-auto mt-5">
+            <center><div class="card-header"style="border-color:#00986F;border-width:3px;">
+                <center>
+                        <img src="../assets/images/avatar.png" width="180px" />
+                    </center>
+                Admin Login</div></center>
             <div class="card-body">
                 <form runat="server" id="formlogin">
                     <asp:Panel ID="pnl_warning" runat="server" Visible="false">
@@ -38,7 +42,7 @@
                     </asp:Panel>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
-                        <asp:TextBox ID="txt_email" runat="server" CssClass="form-control" placeholder="Enter email" TextMode="Email"></asp:TextBox>
+                        <asp:TextBox ID="txt_email" runat="server" CssClass="form-control" placeholder="Enter email" TextMode="Email" BackColor="#1D2026" BorderColor="#00986F" BorderStyle="Solid" BorderWidth="3px" ForeColor="White"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rqr_emil" runat="server" ErrorMessage="Enter email" ControlToValidate="txt_email" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="rqrexpre_email" runat="server" ErrorMessage="Enter validate email" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ControlToValidate="txt_email" Display="Dynamic" ForeColor="Red"></asp:RegularExpressionValidator>
                     </div>
@@ -46,7 +50,7 @@
                         <div class="form-row">
                             <div class="col">
                                 <label for="exampleInputPassword1">Password</label>
-                                <asp:TextBox ID="txt_pass" runat="server" CssClass="form-control" placeholder="Enter password" TextMode="Password"></asp:TextBox>
+                                <asp:TextBox ID="txt_pass" runat="server" CssClass="form-control" placeholder="Enter password" TextMode="Password" BackColor="#1D2026" BorderColor="#00986F" BorderStyle="Solid" BorderWidth="3px" ForeColor="White"></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="rqr_pass" runat="server" ErrorMessage="Enter password" ControlToValidate="txt_pass" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
                             </div>                  
                         </div>

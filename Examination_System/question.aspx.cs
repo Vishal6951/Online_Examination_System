@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -65,6 +66,7 @@ namespace Examination_System
                     {
                         panel_questshow_warning.Visible = true;
                         lbl_questshowwarning.Text = "Sorry! There is no question in this exam";
+                        btn_submit.Visible = false;
                     }
                 }
                 catch (Exception ex)
@@ -77,7 +79,7 @@ namespace Examination_System
 
         //decalring some varibles to exam marking 
         string result = string.Empty;
-        //string examname;
+        string examname;
         int select_number = 0;
         int correct_number = 0;
         int wrong_number = 0;
@@ -111,7 +113,7 @@ namespace Examination_System
                     select_number = 4;
                 }
 
-                checkanwer(li.Text);
+                checkanswer(li.Text);
                 panel_questshow_warning.Visible = false;
             }
             saveinresult(passfail(), correct_number, gridview_examquestion.Rows.Count);
@@ -119,7 +121,7 @@ namespace Examination_System
         }
 
         //method for checking answer wheter it is right or wrong 
-        public void checkanwer(string qid)
+        public void checkanswer(string qid)
         {
             using (SqlConnection con = new SqlConnection(s))
             {
@@ -174,13 +176,14 @@ namespace Examination_System
                     {
 
                         result = result + "Pass";
-                        break;
+                        
                     }
                     else
                     {
                         result = result + "Fail";
-                        break;
+                        
                     }
+                    
                 }
             }
             return result;

@@ -36,7 +36,7 @@ namespace Examination_System.Admin
                 catch (Exception ex)
                 {
                     panel_index_warning.Visible = true;
-                    lbl_indexwarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                    lbl_indexwarning.Text = "Something went wrong." + ex.Message;
                 }
             }
         }
@@ -57,7 +57,7 @@ namespace Examination_System.Admin
                 catch (Exception ex)
                 {
                     panel_index_warning.Visible = true;
-                    lbl_indexwarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                    lbl_indexwarning.Text = "Something went wrong." + ex.Message;
                 }
             }
         }
@@ -78,7 +78,7 @@ namespace Examination_System.Admin
                 catch (Exception ex)
                 {
                     panel_index_warning.Visible = true;
-                    lbl_indexwarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                    lbl_indexwarning.Text = "Something went wrong." + ex.Message;
                 }
             }
         }
